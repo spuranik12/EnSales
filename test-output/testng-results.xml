@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EnSales_Automation" duration-ms="18309" started-at="2018-09-20T11:26:11Z" finished-at="2018-09-20T11:26:29Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="18309" started-at="2018-09-20T11:26:11Z" finished-at="2018-09-20T11:26:29Z">
+      <class name="testClasses.LoginPageTest">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testClasses.LoginPageTest@42d80b78]" name="openBrowser" is-config="true" duration-ms="12156" started-at="2018-09-20T16:56:11Z" finished-at="2018-09-20T16:56:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginWithValidInfo(java.lang.String, java.lang.String)[pri:0, instance:testClasses.LoginPageTest@42d80b78]" name="loginWithValidInfo" duration-ms="6141" started-at="2018-09-20T16:56:23Z" data-provider="Valid Login Detials" finished-at="2018-09-20T16:56:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pradip.sudke@silicus.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pa55w0rd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidInfo -->
+      </class> <!-- testClasses.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- EnSales_Automation -->
+</testng-results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EnSales_Automation]">
+  <parameter name="Browser" value="chrome"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="testClasses.LoginPageTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="loginWithValidInfo" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testClasses.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [EnSales_Automation] -->
