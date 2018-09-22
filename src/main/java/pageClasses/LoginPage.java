@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import common.BasePage;
 
 public class LoginPage extends BasePage {
-
+	
 	@FindBy(css = "#UserName")
 	private WebElement emailIdField;
 
@@ -20,13 +20,15 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//h4[@class='login-heading']")
 	private WebElement loginPageHeader;
 	
-//	@FindBy(css = "#spanMessage")
-//	private WebElement invalidLoginMsg;
-
 	public LoginPage(WebDriver driver){
 		super(driver);
 	}
-
+	
+	public boolean isLoginPageDisplayed(){
+		actions.applyDefaultImplicitWait();
+		return loginBtn.isDisplayed();  
+	}
+	
 	public void loginWithValidCredentials(String username, String password){
 		actions.applyImplicitWait(10);
 		emailIdField.sendKeys(username);
@@ -36,28 +38,4 @@ public class LoginPage extends BasePage {
 		loginBtn.click();
 	}
 
-	public void loginWithInvalidCredentials(String username, String password){
-		actions.applyDefaultImplicitWait();
-		emailIdField.sendKeys(username);
-		actions.applyDefaultImplicitWait();
-		passwordField.sendKeys(password);  
-		actions.waitElementToBeClickable(loginBtn, 5);
-		loginBtn.click();
-	}
-
-	public boolean isLoginPageDisplayed(){
-		actions.applyDefaultImplicitWait();
-		return loginBtn.isDisplayed();   
-	}
-
-	
-//	public String displayInavlidMessage(){
-//		actions.applyDefaultImplicitWait();
-//		return invalidLoginMsg.getText();  
-//	}
-//
-//	public boolean isInvalidLoginMessageDisplayed(){
-//		actions.applyDefaultImplicitWait();
-//		return invalidLoginMsg.isDisplayed(); 
-//	}
 }
