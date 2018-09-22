@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="EnSales_Automation" duration-ms="18309" started-at="2018-09-20T11:26:11Z" finished-at="2018-09-20T11:26:29Z">
+  <suite name="EnSales_Automation" duration-ms="202207" started-at="2018-09-22T17:43:03Z" finished-at="2018-09-22T17:46:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18309" started-at="2018-09-20T11:26:11Z" finished-at="2018-09-20T11:26:29Z">
+    <test name="Test" duration-ms="202207" started-at="2018-09-22T17:43:03Z" finished-at="2018-09-22T17:46:25Z">
       <class name="testClasses.LoginPageTest">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testClasses.LoginPageTest@42d80b78]" name="openBrowser" is-config="true" duration-ms="12156" started-at="2018-09-20T16:56:11Z" finished-at="2018-09-20T16:56:23Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testClasses.LoginPageTest@3bfdc050]" name="openBrowser" is-config="true" duration-ms="16765" started-at="2018-09-22T23:13:03Z" finished-at="2018-09-22T23:13:20Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="loginWithValidInfo(java.lang.String, java.lang.String)[pri:0, instance:testClasses.LoginPageTest@42d80b78]" name="loginWithValidInfo" duration-ms="6141" started-at="2018-09-20T16:56:23Z" data-provider="Valid Login Detials" finished-at="2018-09-20T16:56:29Z">
+        <test-method status="PASS" signature="loginWithValidInfo(java.lang.String, java.lang.String)[pri:0, instance:testClasses.LoginPageTest@3bfdc050]" name="loginWithValidInfo" duration-ms="79119" started-at="2018-09-22T23:13:20Z" data-provider="Valid Login Detials" finished-at="2018-09-22T23:14:39Z">
           <params>
             <param index="0">
               <value>
@@ -34,6 +34,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidInfo -->
+        <test-method status="PASS" signature="openEnsalesModule()[pri:0, instance:testClasses.LoginPageTest@3bfdc050]" name="openEnsalesModule" duration-ms="106302" started-at="2018-09-22T23:14:39Z" finished-at="2018-09-22T23:16:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openEnsalesModule -->
       </class> <!-- testClasses.LoginPageTest -->
     </test> <!-- Test -->
   </suite> <!-- EnSales_Automation -->
